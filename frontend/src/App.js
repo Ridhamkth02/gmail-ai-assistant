@@ -11,7 +11,7 @@ function App() {
   const [selectedEmailIdx, setSelectedEmailIdx] = useState(null);
   const [replyText, setReplyText] = useState('');
 
-  const BACKEND_URL = 'http://localhost:8000';
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
   useEffect(() => {
     const token = new URLSearchParams(window.location.search).get('token') ||
