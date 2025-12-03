@@ -13,6 +13,8 @@ function App() {
 
   const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
+
+
   useEffect(() => {
     const token = new URLSearchParams(window.location.search).get('token') ||
                    localStorage.getItem('authToken');
