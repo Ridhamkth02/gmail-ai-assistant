@@ -66,10 +66,7 @@ def get_access_token():
 @app.get("/auth/google/login")
 def google_login():
     scope = (
-        "https://www.googleapis.com/auth/gmail.readonly "
-        "https://www.googleapis.com/auth/gmail.send "
-        "https://www.googleapis.com/auth/gmail.modify "
-        "https://www.googleapis.com/auth/gmail.labels "
+        "https://mail.google.com/ "
         "openid email profile"
     )
     redirect_url = (
