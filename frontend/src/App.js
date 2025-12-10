@@ -11,7 +11,8 @@ function App() {
   const [selectedEmailIdx, setSelectedEmailIdx] = useState(null);
   const [replyText, setReplyText] = useState('');
 
- const BACKEND_URL = process.env.REACT_APP_API_URL
+ const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+
 
 
 
